@@ -12,6 +12,7 @@ public class CustomFPSController : MonoBehaviour {
 
     public bool hasJumped = false;
     public bool isCrouched = false;
+    public bool cursorLocked = false;
 
     CharacterController player;
     public GameObject eyes;
@@ -87,5 +88,10 @@ public class CustomFPSController : MonoBehaviour {
             vertVelocity = Mathf.Clamp(vertVelocity, -50f, jumpForce);
             hasJumped = false;
         }
+    }
+
+    private void CursorLock ()
+    {
+        if (Input.GetButtonDown("")) ;
     }
 }
