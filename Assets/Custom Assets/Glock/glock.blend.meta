@@ -1,16 +1,44 @@
 fileFormatVersion: 2
-guid: 0bca22a868a45e44ab270a791ee4f121
-timeCreated: 1524316901
+guid: ec90744ad4999f04a98aa5da4e7d1cd8
+timeCreated: 1524449978
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: Material
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Cube
+    100000: Cube
+    100002: //RootNode
+    100004: Magazine
+    100006: Plane
+    100008: Receiver
+    100010: Slide
+    100012: Trigger
+    400000: Cube
+    400002: //RootNode
+    400004: Magazine
+    400006: Plane
+    400008: Receiver
+    400010: Slide
+    400012: Trigger
+    2100000: Material_001
+    2100002: unnamed
+    2300000: Cube
+    2300002: Magazine
+    2300004: Plane
+    2300006: Receiver
+    2300008: Slide
+    2300010: Trigger
+    3300000: Cube
+    3300002: Magazine
+    3300004: Plane
+    3300006: Receiver
+    3300008: Slide
+    3300010: Trigger
+    4300000: Plane
+    4300002: Magazine
+    4300004: Trigger
+    4300006: Cube
+    4300008: Slide
+    4300010: Receiver
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
