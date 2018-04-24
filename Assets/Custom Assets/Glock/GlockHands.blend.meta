@@ -98,6 +98,11 @@ ModelImporter:
     100180: Trigger
     100182: upper_arm_L
     100184: upper_arm_R
+    100186: Hands
+    100188: Glock_001
+    100190: Arms
+    100192: Arms_Mesh
+    100194: Glock_Mesh
     400000: Armature
     400002: Barrel
     400004: basicRig
@@ -191,6 +196,11 @@ ModelImporter:
     400180: Trigger
     400182: upper_arm_L
     400184: upper_arm_R
+    400186: Hands
+    400188: Glock_001
+    400190: Arms
+    400192: Arms_Mesh
+    400194: Glock_Mesh
     2100000: basicRig_Skin_001
     2100002: basicRig_Skin
     2100004: Material_001
@@ -283,11 +293,29 @@ ModelImporter:
     4300056: GZM_Tongue
     4300058: GZM_FaceHead
     4300060: GZM_CircleHips
+    4300062: Glock_001
+    4300064: Arms_Mesh
+    4300066: Glock_Mesh
     7400000: Default Take
     7400002: Raise
+    7400004: basicRigAction
+    7400006: Fire_001
+    7400008: Fire_002
+    7400010: Fire_003
+    7400012: defunct_001
+    7400014: Fire
+    7400016: defunct
+    7400018: Firing
+    7400020: GlockAction_001
+    7400022: FIRE
+    7400024: RAISE
+    7400026: GlockAction
     9500000: //RootNode
     13700000: basicRig_Body
     13700002: Glock
+    13700004: Glock_001
+    13700006: Arms_Mesh
+    13700008: Glock_Mesh
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -314,7 +342,119 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 7
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: FIRE
+      takeName: FIRE
+      firstFrame: 0
+      lastFrame: 7
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: GlockAction
+      takeName: GlockAction
+      firstFrame: 0
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: RAISE
+      takeName: RAISE
+      firstFrame: 0
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

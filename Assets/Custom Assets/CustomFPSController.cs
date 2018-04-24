@@ -13,7 +13,7 @@ public class CustomFPSController : MonoBehaviour {
     public float backSpeed = 1.0f;
     public float sprintMult = 2.0f;
     public float sensitivity = 2.0f;
-    public float slideCooldown = 5.0f;
+    public float slideCooldown = 1.0f;
     public int inverted = -1;
 
     public bool hasJumped = false;
@@ -21,11 +21,13 @@ public class CustomFPSController : MonoBehaviour {
     public bool cursorLocked = false;
     public bool isSprinting = false;
     public bool isSliding = false;
+    public bool isFiring = false;
 
     CharacterController player;
     public GameObject eyes;
 
     private float moveForward, moveBack, moveStrafe, rotX, rotY, vertVelocity, slideTime = 0;
+    private Vector3 slideDirection;
     public float jumpForce = 4.0f;
 
 	// Use this for initialization
@@ -150,9 +152,10 @@ public class CustomFPSController : MonoBehaviour {
         
         if (isSprinting && !isSliding && Input.GetButtonDown("Crouch"))
         {
-            isSliding = true;
-            slideTime = Time.time + slideCooldown;
             player.height = player.height / 2;
+            isSliding = true;
+            slideDirection = eyes.transform.forward;
+            slideTime = Time.time + slideCooldown;
         }
         if (slideTime + slideCooldown < Time.time)
         {
@@ -160,8 +163,10 @@ public class CustomFPSController : MonoBehaviour {
         }
         if (isSliding)
         {
-            Vector3 movement = new Vector3 (0,0,speed * 4);
-            movement = transform.rotation * movement;
+            Vector3 neutralizeHeight = new Vector3(1, 0, 1);
+            Vector3 movement = slideDirection * speed * 4;
+            movement = Vector3.Scale(movement, neutralizeHeight);
+            movement.y = vertVelocity;
             player.Move(movement * Time.deltaTime);
         }
     }

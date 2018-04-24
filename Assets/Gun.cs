@@ -9,9 +9,10 @@ public class Gun : MonoBehaviour {
 
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
+    public CustomFPSController player;
 
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update () {
 
         if (Input.GetButtonDown("Fire1"))
         {
