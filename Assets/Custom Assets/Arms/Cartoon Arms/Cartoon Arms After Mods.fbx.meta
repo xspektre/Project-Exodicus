@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 962b9861f06b453478144ff98184645a
-timeCreated: 1524449956
+guid: 2a83c2513985d544e9da74fe6650ed36
+timeCreated: 1524613021
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -14,44 +14,44 @@ ModelImporter:
     100012: Camera
     100014: //RootNode
     100016: Cube
-    100018: Hand.L
-    100020: Hand.R
-    100022: Index0.L
-    100024: Index0.R
-    100026: Index1.L
-    100028: Index1.R
-    100030: Index2.L
-    100032: Index2.R
-    100034: Lamp
-    100036: Lower Arm.L
-    100038: Lower Arm.R
-    100040: Middle0.L
-    100042: Middle0.R
-    100044: Middle1.L
-    100046: Middle1.R
-    100048: Middle2.L
-    100050: Middle2.R
-    100052: Pinkie0.L
-    100054: Pinkie0.R
-    100056: Pinkie1.L
-    100058: Pinkie1.R
-    100060: Pinkie2.L
-    100062: Pinkie2.R
-    100064: Ring0.L
-    100066: Ring0.R
-    100068: Ring2.L
-    100070: Ring2.R
-    100072: Ring3.L
-    100074: Ring3.R
-    100076: Thumb0.L
-    100078: Thumb0.R
-    100080: Thumb1.L
-    100082: Thumb1.R
-    100084: Thumb2.L
-    100086: Thumb2.R
-    100088: Upper Arm.L
-    100090: Upper Arm.R
-    100092: Cube.001
+    100018: Cube.001
+    100020: Hand.L
+    100022: Hand.R
+    100024: Index0.L
+    100026: Index0.R
+    100028: Index1.L
+    100030: Index1.R
+    100032: Index2.L
+    100034: Index2.R
+    100036: Lamp
+    100038: Lower Arm.L
+    100040: Lower Arm.R
+    100042: Middle0.L
+    100044: Middle0.R
+    100046: Middle1.L
+    100048: Middle1.R
+    100050: Middle2.L
+    100052: Middle2.R
+    100054: Pinkie0.L
+    100056: Pinkie0.R
+    100058: Pinkie1.L
+    100060: Pinkie1.R
+    100062: Pinkie2.L
+    100064: Pinkie2.R
+    100066: Ring0.L
+    100068: Ring0.R
+    100070: Ring2.L
+    100072: Ring2.R
+    100074: Ring3.L
+    100076: Ring3.R
+    100078: Thumb0.L
+    100080: Thumb0.R
+    100082: Thumb1.L
+    100084: Thumb1.R
+    100086: Thumb2.L
+    100088: Thumb2.R
+    100090: Upper Arm.L
+    100092: Upper Arm.R
     400000: Arm IK.L
     400002: Arm IK.R.
     400004: Arm Pole Target.L
@@ -61,51 +61,51 @@ ModelImporter:
     400012: Camera
     400014: //RootNode
     400016: Cube
-    400018: Hand.L
-    400020: Hand.R
-    400022: Index0.L
-    400024: Index0.R
-    400026: Index1.L
-    400028: Index1.R
-    400030: Index2.L
-    400032: Index2.R
-    400034: Lamp
-    400036: Lower Arm.L
-    400038: Lower Arm.R
-    400040: Middle0.L
-    400042: Middle0.R
-    400044: Middle1.L
-    400046: Middle1.R
-    400048: Middle2.L
-    400050: Middle2.R
-    400052: Pinkie0.L
-    400054: Pinkie0.R
-    400056: Pinkie1.L
-    400058: Pinkie1.R
-    400060: Pinkie2.L
-    400062: Pinkie2.R
-    400064: Ring0.L
-    400066: Ring0.R
-    400068: Ring2.L
-    400070: Ring2.R
-    400072: Ring3.L
-    400074: Ring3.R
-    400076: Thumb0.L
-    400078: Thumb0.R
-    400080: Thumb1.L
-    400082: Thumb1.R
-    400084: Thumb2.L
-    400086: Thumb2.R
-    400088: Upper Arm.L
-    400090: Upper Arm.R
-    400092: Cube.001
+    400018: Cube.001
+    400020: Hand.L
+    400022: Hand.R
+    400024: Index0.L
+    400026: Index0.R
+    400028: Index1.L
+    400030: Index1.R
+    400032: Index2.L
+    400034: Index2.R
+    400036: Lamp
+    400038: Lower Arm.L
+    400040: Lower Arm.R
+    400042: Middle0.L
+    400044: Middle0.R
+    400046: Middle1.L
+    400048: Middle1.R
+    400050: Middle2.L
+    400052: Middle2.R
+    400054: Pinkie0.L
+    400056: Pinkie0.R
+    400058: Pinkie1.L
+    400060: Pinkie1.R
+    400062: Pinkie2.L
+    400064: Pinkie2.R
+    400066: Ring0.L
+    400068: Ring0.R
+    400070: Ring2.L
+    400072: Ring2.R
+    400074: Ring3.L
+    400076: Ring3.R
+    400078: Thumb0.L
+    400080: Thumb0.R
+    400082: Thumb1.L
+    400084: Thumb1.R
+    400086: Thumb2.L
+    400088: Thumb2.R
+    400090: Upper Arm.L
+    400092: Upper Arm.R
     2000000: Camera
-    2100000: Material
-    2100002: No Name
+    2100000: No Name
+    2100002: Material
     2300000: Cube.001
     3300000: Cube.001
-    4300000: Cube
-    4300002: Cube.001
+    4300000: Cube.001
+    4300002: Cube
     9500000: //RootNode
     10800000: Lamp
     13700000: Cube
