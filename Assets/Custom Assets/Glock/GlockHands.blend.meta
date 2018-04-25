@@ -98,6 +98,49 @@ ModelImporter:
     100180: Trigger
     100182: upper_arm_L
     100184: upper_arm_R
+    100186: Hands
+    100188: Glock_001
+    100190: Arms
+    100192: Arms_Mesh
+    100194: Glock_Mesh
+    100196: Barrel_end
+    100198: Magazine_end
+    100200: Slide_end
+    100202: Slide_release_end
+    100204: Trigger_end
+    100206: Arm_IK_L
+    100208: Arm_IK_R_
+    100210: Arm_Pole_Target_L
+    100212: Arm_Pole_Target_R
+    100214: Bone
+    100216: Cube
+    100218: Cube_001
+    100220: Hand_L
+    100222: Hand_R
+    100224: Index0_L
+    100226: Index0_R
+    100228: Index1_L
+    100230: Index1_R
+    100232: Lower_Arm_L
+    100234: Lower_Arm_R
+    100236: Middle0_L
+    100238: Middle0_R
+    100240: Middle1_L
+    100242: Middle1_R
+    100244: Pinkie0_L
+    100246: Pinkie0_R
+    100248: Pinkie1_L
+    100250: Pinkie1_R
+    100252: Ring0_L
+    100254: Ring0_R
+    100256: Ring2_L
+    100258: Ring2_R
+    100260: Thumb0_L
+    100262: Thumb0_R
+    100264: Thumb1_L
+    100266: Thumb1_R
+    100268: Upper_Arm_L
+    100270: Upper_Arm_R
     400000: Armature
     400002: Barrel
     400004: basicRig
@@ -191,9 +234,57 @@ ModelImporter:
     400180: Trigger
     400182: upper_arm_L
     400184: upper_arm_R
+    400186: Hands
+    400188: Glock_001
+    400190: Arms
+    400192: Arms_Mesh
+    400194: Glock_Mesh
+    400196: Barrel_end
+    400198: Magazine_end
+    400200: Slide_end
+    400202: Slide_release_end
+    400204: Trigger_end
+    400206: Arm_IK_L
+    400208: Arm_IK_R_
+    400210: Arm_Pole_Target_L
+    400212: Arm_Pole_Target_R
+    400214: Bone
+    400216: Cube
+    400218: Cube_001
+    400220: Hand_L
+    400222: Hand_R
+    400224: Index0_L
+    400226: Index0_R
+    400228: Index1_L
+    400230: Index1_R
+    400232: Lower_Arm_L
+    400234: Lower_Arm_R
+    400236: Middle0_L
+    400238: Middle0_R
+    400240: Middle1_L
+    400242: Middle1_R
+    400244: Pinkie0_L
+    400246: Pinkie0_R
+    400248: Pinkie1_L
+    400250: Pinkie1_R
+    400252: Ring0_L
+    400254: Ring0_R
+    400256: Ring2_L
+    400258: Ring2_R
+    400260: Thumb0_L
+    400262: Thumb0_R
+    400264: Thumb1_L
+    400266: Thumb1_R
+    400268: Upper_Arm_L
+    400270: Upper_Arm_R
     2100000: basicRig_Skin_001
     2100002: basicRig_Skin
     2100004: Material_001
+    2100006: Material_000
+    2100008: Material
+    2100010: unnamed
+    2100012: Material_003
+    2100014: Material_004
     2300000: GZM_Ball025
     2300002: GZM_Breast_L
     2300004: GZM_Breast_R
@@ -223,6 +314,7 @@ ModelImporter:
     2300052: GZM_Toe
     2300054: GZM_Tongue
     2300056: GZM_UpLid
+    2300058: Cube_001
     3300000: GZM_Ball025
     3300002: GZM_Breast_L
     3300004: GZM_Breast_R
@@ -252,6 +344,7 @@ ModelImporter:
     3300052: GZM_Toe
     3300054: GZM_Tongue
     3300056: GZM_UpLid
+    3300058: Cube_001
     4300000: basicRig_Body
     4300002: Glock
     4300004: GZM_Head
@@ -283,11 +376,32 @@ ModelImporter:
     4300056: GZM_Tongue
     4300058: GZM_FaceHead
     4300060: GZM_CircleHips
+    4300062: Glock_001
+    4300064: Arms_Mesh
+    4300066: Glock_Mesh
+    4300068: Cube
+    4300070: Cube_001
     7400000: Default Take
     7400002: Raise
+    7400004: basicRigAction
+    7400006: Fire_001
+    7400008: Fire_002
+    7400010: Fire_003
+    7400012: defunct_001
+    7400014: Fire
+    7400016: defunct
+    7400018: Firing
+    7400020: GlockAction_001
+    7400022: FIRE
+    7400024: RAISE
+    7400026: GlockAction
     9500000: //RootNode
     13700000: basicRig_Body
     13700002: Glock
+    13700004: Glock_001
+    13700006: Arms_Mesh
+    13700008: Glock_Mesh
+    13700010: Cube
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -314,7 +428,91 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Fire
+      takeName: Fire
+      firstFrame: 0
+      lastFrame: 5
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: GlockAction
+      takeName: GlockAction
+      firstFrame: 0
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Raise
+      takeName: Raise
+      firstFrame: 0
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

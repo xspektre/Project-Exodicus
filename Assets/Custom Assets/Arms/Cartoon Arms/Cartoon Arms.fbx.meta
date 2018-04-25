@@ -51,6 +51,7 @@ ModelImporter:
     100086: Thumb2.R
     100088: Upper Arm.L
     100090: Upper Arm.R
+    100092: Cube.001
     400000: Arm IK.L
     400002: Arm IK.R.
     400004: Arm Pole Target.L
@@ -97,9 +98,14 @@ ModelImporter:
     400086: Thumb2.R
     400088: Upper Arm.L
     400090: Upper Arm.R
+    400092: Cube.001
     2000000: Camera
     2100000: Material
+    2100002: No Name
+    2300000: Cube.001
+    3300000: Cube.001
     4300000: Cube
+    4300002: Cube.001
     9500000: //RootNode
     10800000: Lamp
     13700000: Cube

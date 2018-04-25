@@ -45,6 +45,7 @@ ModelImporter:
     100074: Thumb2_R
     100076: Upper_Arm_L
     100078: Upper_Arm_R
+    100080: Cube_001
     400000: Armature
     400002: Bone
     400004: //RootNode
@@ -85,8 +86,13 @@ ModelImporter:
     400074: Thumb2_R
     400076: Upper_Arm_L
     400078: Upper_Arm_R
+    400080: Cube_001
     2100000: Material
+    2100002: unnamed
+    2300000: Cube_001
+    3300000: Cube_001
     4300000: Cube
+    4300002: Cube_001
     7400000: Default Take
     9500000: //RootNode
     13700000: Cube
