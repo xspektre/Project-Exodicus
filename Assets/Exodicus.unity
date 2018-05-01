@@ -9427,7 +9427,7 @@ MonoBehaviour:
   isSliding: 0
   isFiring: 0
   eyes: {fileID: 1278556393}
-  jumpForce: 10
+  jumpForce: 3
 --- !u!1 &1278556393
 GameObject:
   m_ObjectHideFlags: 0
