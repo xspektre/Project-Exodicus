@@ -11,6 +11,14 @@ public class Gun : MonoBehaviour {
     public ParticleSystem muzzleFlash;
     public CustomFPSController player;
 
+    Animator animator;
+
+    // Initialization
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     // Update is called once per frame
     void Update () {
         if (Input.GetButtonDown("Fire1"))
@@ -22,6 +30,7 @@ public class Gun : MonoBehaviour {
 
     void Shoot()
     {
+        animator.SetBool("isFiring", true);
         muzzleFlash.Play();
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
@@ -34,5 +43,6 @@ public class Gun : MonoBehaviour {
                 target.TakeDamage(damage);
             }
         }
+        animator.SetBool("isFiring", false);
     }
 }

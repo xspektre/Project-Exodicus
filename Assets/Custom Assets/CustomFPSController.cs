@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class CustomFPSController : MonoBehaviour {
 
-    //Cursor Lock
-
 
     // Variables in Controller
     public float speed = 2.0f;
@@ -21,7 +19,6 @@ public class CustomFPSController : MonoBehaviour {
     public bool cursorLocked = false;
     public bool isSprinting = false;
     public bool isSliding = false;
-    public bool isFiring = false;
 
     CharacterController player;
     public GameObject eyes;
@@ -44,15 +41,15 @@ public class CustomFPSController : MonoBehaviour {
 
         SprintCheck();
 
-        Move();
-
         Slide();
 
         Crouch();
 
+        ApplyGravity();
+
         Jump();
 
-        ApplyGravity();
+        Move();
 
 
         // Put into function
@@ -71,9 +68,9 @@ public class CustomFPSController : MonoBehaviour {
     private void Jump ()
     {
 
-        // NEED TO IMPLEMENT GROUNDCHECK!
+        // NEED TO IMPLEMENT GROUNDCHECK AND REAL-PHYSICS BASED JUMPING. DO NOT SET VELOCITY TO FIXED VALUES! MAKE IT ITERATIVE!
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && !hasJumped)
         {
             vertVelocity = jumpForce;
             hasJumped = true;
@@ -82,19 +79,30 @@ public class CustomFPSController : MonoBehaviour {
 
     private void ApplyGravity ()
     {
+        vertVelocity = player.velocity.y;
+        //if (player.isGrounded)
+        //{
+        //    if (!hasJumped)
+        //    {
+        //        vertVelocity = Physics.gravity.y;
+        //    }
+        //}
+        //else
+        //{
+
+        vertVelocity += Physics.gravity.y * Time.deltaTime;
+        vertVelocity = Mathf.Clamp(vertVelocity, -50f, jumpForce);
+
         if (player.isGrounded)
         {
-            if (!hasJumped)
-            {
-                vertVelocity = Physics.gravity.y;
-            }
-        }
-        else
-        {
-            vertVelocity += Physics.gravity.y * Time.deltaTime;
-            vertVelocity = Mathf.Clamp(vertVelocity, -50f, jumpForce);
             hasJumped = false;
         }
+
+        if (!hasJumped)
+        {
+            vertVelocity = Mathf.Clamp(vertVelocity, -50f, 1f);
+        }
+        //}
     }
 
     private void CursorLock ()
@@ -115,7 +123,7 @@ public class CustomFPSController : MonoBehaviour {
             moveForward = Input.GetAxis("Vertical") * speed;
         }
 
-        moveBack = Input.GetAxis("Vertical") * speed * backSpeed * inverted;
+        moveBack = Input.GetAxis("Vertical") * speed * backSpeed;
         moveStrafe = Input.GetAxis("Horizontal") * speed * strafeSpeed;
 
         rotX = Input.GetAxis("Mouse X") * sensitivity;
@@ -127,7 +135,17 @@ public class CustomFPSController : MonoBehaviour {
 
         if (!isSliding)
         {
-            Vector3 movement = new Vector3(moveStrafe, vertVelocity, moveForward);
+            Vector3 movement;
+
+            if (Input.GetAxis("Vertical") >= 0)
+            {
+                movement = new Vector3(moveStrafe, vertVelocity, moveForward);
+            }
+            else
+            {
+                movement = new Vector3(moveStrafe, vertVelocity, moveBack);
+            }
+
             movement = transform.rotation * movement;
             player.Move(movement * Time.deltaTime);
         }
