@@ -20,6 +20,7 @@ public class CustomFPSController : MonoBehaviour {
     public bool isSprinting = false;
     public bool isSliding = false;
 
+    Animator animator;
     CharacterController player;
     public GameObject eyes;
 
@@ -30,6 +31,7 @@ public class CustomFPSController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+        animator = GetComponent<Animator>();
         player = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -113,7 +115,7 @@ public class CustomFPSController : MonoBehaviour {
     private void Move()
     {
 
-        // Get Movement Data
+        // Generate Forward Speed
         if (isSprinting)
         {
             moveForward = Input.GetAxis("Vertical") * speed * sprintMult;
@@ -122,17 +124,19 @@ public class CustomFPSController : MonoBehaviour {
         {
             moveForward = Input.GetAxis("Vertical") * speed;
         }
-
+        // Generate Backwards Speed
         moveBack = Input.GetAxis("Vertical") * speed * backSpeed;
         moveStrafe = Input.GetAxis("Horizontal") * speed * strafeSpeed;
-
+        // Generate Rotational Speed
         rotX = Input.GetAxis("Mouse X") * sensitivity;
         rotY = Input.GetAxis("Mouse Y") * sensitivity * inverted;
 
-
+        // Rotate View
         transform.Rotate(0, rotX, 0);
         eyes.transform.Rotate(rotY, 0, 0);
 
+
+        // If not sliding, let player control character
         if (!isSliding)
         {
             Vector3 movement;
@@ -148,6 +152,10 @@ public class CustomFPSController : MonoBehaviour {
 
             movement = transform.rotation * movement;
             player.Move(movement * Time.deltaTime);
+
+            // Update animation controller
+            animator.SetFloat("Speed", Input.GetAxis("Vertical"));
+            print(animator.GetFloat("Speed"));
         }
     }
 
