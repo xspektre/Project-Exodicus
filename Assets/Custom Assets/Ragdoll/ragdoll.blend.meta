@@ -56,6 +56,7 @@ ModelImporter:
     7400004: Running
     7400006: T-Pose
     7400008: Walking
+    7400010: Sliding
     9500000: //RootNode
     13700000: Cube
   externalObjects: {}
@@ -79,6 +80,12 @@ ModelImporter:
       has scale animation that will be discarded.\n\t'Lower_Leg_R' has scale animation
       that will be discarded.\n\t'Foot_R' has scale animation that will be discarded.\n\nClip
       'Running' has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Upper_Leg_L'
+      has scale animation that will be discarded.\n\t'Lower_Leg_L' has scale animation
+      that will be discarded.\n\t'Foot_L' has scale animation that will be discarded.\n\t'Upper_Leg_R'
+      has scale animation that will be discarded.\n\t'Lower_Leg_R' has scale animation
+      that will be discarded.\n\t'Foot_R' has scale animation that will be discarded.\n\nClip
+      'Sliding' has import animation warnings that might lower retargeting quality:\nNote:
       Activate translation DOF on avatar to improve retargeting quality.\n\t'Upper_Leg_L'
       has scale animation that will be discarded.\n\t'Lower_Leg_L' has scale animation
       that will be discarded.\n\t'Foot_L' has scale animation that will be discarded.\n\t'Upper_Leg_R'
@@ -293,6 +300,34 @@ ModelImporter:
           preInfinity: 2
           postInfinity: 2
           rotationOrder: 0
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sliding
+      takeName: Sliding
+      firstFrame: -1
+      lastFrame: 16.6
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
       events: []
       transformMask: []
       maskType: 3

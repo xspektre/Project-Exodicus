@@ -136,6 +136,7 @@ public class CustomFPSController : MonoBehaviour {
         eyes.transform.Rotate(rotY, 0, 0);
 
 
+
         // If not sliding, let player control character
         if (!isSliding)
         {
@@ -164,11 +165,13 @@ public class CustomFPSController : MonoBehaviour {
         if (Input.GetButton("Sprint") && Input.GetAxis("Vertical") > 0 && Input.GetAxis("Horizontal") == 0)
         {
             isSprinting = true;
+            animator.SetBool("Sprint", true);
             isCrouched = false;
         }
         else
         {
             isSprinting = false;
+            animator.SetBool("Sprint", false);
         }
     }
 
@@ -180,12 +183,14 @@ public class CustomFPSController : MonoBehaviour {
         {
             player.height = player.height / 2;
             isSliding = true;
+            animator.SetBool("Slide", true);
             slideDirection = eyes.transform.forward;
             slideTime = Time.time + slideCooldown;
         }
         if (slideTime + slideCooldown < Time.time)
         {
             isSliding = false;
+            animator.SetBool("Slide", false);
         }
         if (isSliding)
         {

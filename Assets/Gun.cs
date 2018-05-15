@@ -9,7 +9,6 @@ public class Gun : MonoBehaviour {
 
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
-    public CustomFPSController player;
 
     Animator animator;
 
@@ -43,6 +42,5 @@ public class Gun : MonoBehaviour {
                 target.TakeDamage(damage);
             }
         }
-        animator.SetBool("isFiring", false);
     }
 }
